@@ -1,0 +1,93 @@
+2023-02-02 20:53:59 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "create table if not exists calculations ([*]"; expected "identifier"; SQL statement:
+create table if not exists calculations ( [42001-214]
+2023-02-02 20:56:36 jdbc[14]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "create table if not exists calculations (\000d\000a    id int [*]identity primary key,\000d\000a    userName varchar(255),\000d\000a    totalLoan double,\000d\000a    annualLoan double,\000d\000a    monthlyLoan double,\000d\000a    annualInterest double,\000d\000a    monthlyInterest double,\000d\000a    monthlyPayment double\000d\000a)"; expected "ARRAY, INVISIBLE, VISIBLE, NOT NULL, NULL, AS, DEFAULT, GENERATED, ON UPDATE, NOT NULL, NULL, AUTO_INCREMENT, DEFAULT ON NULL, NULL_TO_DEFAULT, SEQUENCE, SELECTIVITY, COMMENT, CONSTRAINT, COMMENT, PRIMARY KEY, UNIQUE, NOT NULL, NULL, CHECK, REFERENCES, AUTO_INCREMENT, ,, )"; SQL statement:
+create table if not exists calculations (
+    id int identity primary key,
+    userName varchar(255),
+    totalLoan double,
+    annualLoan double,
+    monthlyLoan double,
+    annualInterest double,
+    monthlyInterest double,
+    monthlyPayment double
+) [42001-214]
+2023-02-02 20:57:31 jdbc[14]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "create table if not exists calculations (\000d\000a    id int [*]identity primary key,\000d\000a    userName varchar(255),\000d\000a    totalLoan double,\000d\000a    annualLoan double,\000d\000a    monthlyLoan double,\000d\000a    annualInterest double,\000d\000a    monthlyInterest double,\000d\000a    monthlyPayment double\000d\000a)"; expected "ARRAY, INVISIBLE, VISIBLE, NOT NULL, NULL, AS, DEFAULT, GENERATED, ON UPDATE, NOT NULL, NULL, AUTO_INCREMENT, DEFAULT ON NULL, NULL_TO_DEFAULT, SEQUENCE, SELECTIVITY, COMMENT, CONSTRAINT, COMMENT, PRIMARY KEY, UNIQUE, NOT NULL, NULL, CHECK, REFERENCES, AUTO_INCREMENT, ,, )"; SQL statement:
+create table if not exists calculations (
+    id int identity primary key,
+    userName varchar(255),
+    totalLoan double,
+    annualLoan double,
+    monthlyLoan double,
+    annualInterest double,
+    monthlyInterest double,
+    monthlyPayment double
+) [42001-214]
+2023-02-02 21:00:39 jdbc[14]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "create table if not exists calculations (\000d\000a    id int [*]identity primary key,\000d\000a    userName varchar(255),\000d\000a    totalLoan int,\000d\000a    annualLoan int,\000d\000a    monthlyLoan int,\000d\000a    annualInterest int,\000d\000a    monthlyInterest int,\000d\000a    monthlyPayment int\000d\000a)"; expected "ARRAY, INVISIBLE, VISIBLE, NOT NULL, NULL, AS, DEFAULT, GENERATED, ON UPDATE, NOT NULL, NULL, AUTO_INCREMENT, DEFAULT ON NULL, NULL_TO_DEFAULT, SEQUENCE, SELECTIVITY, COMMENT, CONSTRAINT, COMMENT, PRIMARY KEY, UNIQUE, NOT NULL, NULL, CHECK, REFERENCES, AUTO_INCREMENT, ,, )"; SQL statement:
+create table if not exists calculations (
+    id int identity primary key,
+    userName varchar(255),
+    totalLoan int,
+    annualLoan int,
+    monthlyLoan int,
+    annualInterest int,
+    monthlyInterest int,
+    monthlyPayment int
+) [42001-214]
+2023-02-02 21:02:54 jdbc[14]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "create table if not exists calculations (\000d\000a    id int [*]identity primary key,\000d\000a    userName varchar(255),\000d\000a    totalLoan integer,\000d\000a    annualLoan integer,\000d\000a    monthlyLoan integer,\000d\000a    annualInterest integer,\000d\000a    monthlyInterest integer,\000d\000a    monthlyPayment integer\000d\000a)"; expected "ARRAY, INVISIBLE, VISIBLE, NOT NULL, NULL, AS, DEFAULT, GENERATED, ON UPDATE, NOT NULL, NULL, AUTO_INCREMENT, DEFAULT ON NULL, NULL_TO_DEFAULT, SEQUENCE, SELECTIVITY, COMMENT, CONSTRAINT, COMMENT, PRIMARY KEY, UNIQUE, NOT NULL, NULL, CHECK, REFERENCES, AUTO_INCREMENT, ,, )"; SQL statement:
+create table if not exists calculations (
+    id int identity primary key,
+    userName varchar(255),
+    totalLoan integer,
+    annualLoan integer,
+    monthlyLoan integer,
+    annualInterest integer,
+    monthlyInterest integer,
+    monthlyPayment integer
+) [42001-214]
+2023-02-02 21:05:21 jdbc[14]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "create table if not exists calculations (\000d\000a    id int [*]identity primary key,\000d\000a    userName varchar(255),\000d\000a    totalLoan integer,\000d\000a    annualLoan integer,\000d\000a    monthlyLoan integer,\000d\000a    annualInterest integer,\000d\000a    monthlyInterest integer,\000d\000a    monthlyPayment integer\000d\000a)"; expected "ARRAY, INVISIBLE, VISIBLE, NOT NULL, NULL, AS, DEFAULT, GENERATED, ON UPDATE, NOT NULL, NULL, AUTO_INCREMENT, DEFAULT ON NULL, NULL_TO_DEFAULT, SEQUENCE, SELECTIVITY, COMMENT, CONSTRAINT, COMMENT, PRIMARY KEY, UNIQUE, NOT NULL, NULL, CHECK, REFERENCES, AUTO_INCREMENT, ,, )"; SQL statement:
+create table if not exists calculations (
+    id int identity primary key,
+    userName varchar(255),
+    totalLoan integer,
+    annualLoan integer,
+    monthlyLoan integer,
+    annualInterest integer,
+    monthlyInterest integer,
+    monthlyPayment integer
+) [42001-214]
+2023-02-02 21:05:35 jdbc[14]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "create table if not exists calculations (\000d\000a    id int [*]identity primary key,\000d\000a    userName varchar(255),\000d\000a)"; expected "ARRAY, INVISIBLE, VISIBLE, NOT NULL, NULL, AS, DEFAULT, GENERATED, ON UPDATE, NOT NULL, NULL, AUTO_INCREMENT, DEFAULT ON NULL, NULL_TO_DEFAULT, SEQUENCE, SELECTIVITY, COMMENT, CONSTRAINT, COMMENT, PRIMARY KEY, UNIQUE, NOT NULL, NULL, CHECK, REFERENCES, AUTO_INCREMENT, ,, )"; SQL statement:
+create table if not exists calculations (
+    id int identity primary key,
+    userName varchar(255),
+) [42001-214]
+2023-02-02 21:05:58 jdbc[14]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "create table if not exists calculations (\000d\000a    id bigint [*]identity primary key,\000d\000a    userName varchar(255),\000d\000a)"; expected "ARRAY, INVISIBLE, VISIBLE, NOT NULL, NULL, AS, DEFAULT, GENERATED, ON UPDATE, NOT NULL, NULL, AUTO_INCREMENT, DEFAULT ON NULL, NULL_TO_DEFAULT, SEQUENCE, SELECTIVITY, COMMENT, CONSTRAINT, COMMENT, PRIMARY KEY, UNIQUE, NOT NULL, NULL, CHECK, REFERENCES, AUTO_INCREMENT, ,, )"; SQL statement:
+create table if not exists calculations (
+    id bigint identity primary key,
+    userName varchar(255),
+) [42001-214]
+2023-02-02 21:07:54 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "create table if not exists calculations ( id int [*]identity primary key, userName varchar(255), totalLoan double, annualLoan double, monthlyLoan double, annualInterest double, monthlyInterest double, monthlyPayment double )"; expected "ARRAY, INVISIBLE, VISIBLE, NOT NULL, NULL, AS, DEFAULT, GENERATED, ON UPDATE, NOT NULL, NULL, AUTO_INCREMENT, DEFAULT ON NULL, NULL_TO_DEFAULT, SEQUENCE, SELECTIVITY, COMMENT, CONSTRAINT, COMMENT, PRIMARY KEY, UNIQUE, NOT NULL, NULL, CHECK, REFERENCES, AUTO_INCREMENT, ,, )"; SQL statement:
+create table if not exists calculations ( id int identity primary key, userName varchar(255), totalLoan double, annualLoan double, monthlyLoan double, annualInterest double, monthlyInterest double, monthlyPayment double ) [42001-214]
+2023-02-02 21:15:21 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "create table if not exists calculations (\000d\000a    id int [*]identity primary key,\000d\000a    userName varchar(255),\000d\000a    totalLoan double,\000d\000a    annualLoan double,\000d\000a    monthlyLoan double,\000d\000a    annualInterest double,\000d\000a    monthlyInterest double,\000d\000a    monthlyPayment double\000d\000a)"; expected "ARRAY, INVISIBLE, VISIBLE, NOT NULL, NULL, AS, DEFAULT, GENERATED, ON UPDATE, NOT NULL, NULL, AUTO_INCREMENT, DEFAULT ON NULL, NULL_TO_DEFAULT, SEQUENCE, SELECTIVITY, COMMENT, CONSTRAINT, COMMENT, PRIMARY KEY, UNIQUE, NOT NULL, NULL, CHECK, REFERENCES, AUTO_INCREMENT, ,, )"; SQL statement:
+create table if not exists calculations (
+    id int identity primary key,
+    userName varchar(255),
+    totalLoan double,
+    annualLoan double,
+    monthlyLoan double,
+    annualInterest double,
+    monthlyInterest double,
+    monthlyPayment double
+) [42001-214]
+2023-02-02 21:20:47 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "[*]IF NOT EXISTS (SELECT * FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_NAME = 'calculations') THEN CREATE TABLE calculations ( id int identity primary key, userName varchar(255), totalLoan double, annualLoan double, monthlyLoan double, annualInterest double, monthlyInterest double, monthlyPayment double )"; SQL statement:
+IF NOT EXISTS (SELECT * FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_NAME = 'calculations') THEN CREATE TABLE calculations ( id int identity primary key, userName varchar(255), totalLoan double, annualLoan double, monthlyLoan double, annualInterest double, monthlyInterest double, monthlyPayment double ) [42000-214]
