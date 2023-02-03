@@ -5,10 +5,12 @@ import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 
+import java.util.concurrent.atomic.AtomicInteger;
+
 @Entity
 public class Calculation {
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @GeneratedValue(strategy = GenerationType.TABLE)
     private int id;
     private String userName;
     private double totalLoan;
@@ -20,6 +22,8 @@ public class Calculation {
 
     private static final int MONTHS_PER_YEAR = 12;
     private static final int TO_PERCENTAGE_PER_MONTH = 1200;
+
+    static AtomicInteger nextId = new AtomicInteger();
 
     public Calculation() {
 
@@ -34,7 +38,8 @@ public class Calculation {
     }
 
     public Calculation(String userName, double totalLoan, double annualInterest, int annualLoanTime) {
-        this.id = id;
+
+        this.id = nextId.incrementAndGet();
         this.userName = userName;
         this.totalLoan = totalLoan;
         this.annualLoanTime = annualLoanTime;

@@ -26,9 +26,6 @@ public class CalculationController {
 
     public ArrayList<Calculation> db2 = new ArrayList<>();
 
-    @Autowired
-    private CalculationService calculationService;
-
     @RequestMapping(value = "/add")
     public String add(@RequestParam String userName,
                       @RequestParam double totalLoan,
@@ -38,6 +35,9 @@ public class CalculationController {
         //calculationService.saveCalculation(calculation);
         return "New Calculation added";
     }
+
+    @Autowired
+    private CalculationService calculationService;
 
     @GetMapping("/examples")
     public List<Calculation> get() {

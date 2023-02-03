@@ -4,6 +4,9 @@ target/
 !**/src/main/**/target/
 !**/src/test/**/target/
 
+### Database (Currently now working)###
+./money/calculations.mv.db
+
 ### STS ###
 .apt_generated
 .classpath
