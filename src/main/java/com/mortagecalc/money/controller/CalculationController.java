@@ -33,7 +33,7 @@ public class CalculationController {
                       @RequestParam int annualLoanTime){
         db2.add(new Calculation(userName,totalLoan,annualInterest,annualLoanTime));
         //calculationService.saveCalculation(calculation);
-        return "New Calculation added";
+        return "New Calculation added: "+userName;
     }
 
     @Autowired

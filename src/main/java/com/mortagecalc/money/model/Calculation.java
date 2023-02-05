@@ -5,6 +5,7 @@ import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 
+import java.text.DecimalFormat;
 import java.util.concurrent.atomic.AtomicInteger;
 
 @Entity
@@ -18,25 +19,40 @@ public class Calculation {
     private int monthlyLoanTime; //Total months of payment
     private double annualInterest;
     private double monthlyInterest;
-    private double monthlyPayment;
+    private String monthlyPayment;
 
     private static final int MONTHS_PER_YEAR = 12;
     private static final int TO_PERCENTAGE_PER_MONTH = 1200;
 
+    //Used for setting the ID
     static AtomicInteger nextId = new AtomicInteger();
 
     public Calculation() {
 
     }
 
-    public double calculateMonthly(int numberPayment, double monthlyInterest, double totalLoan) {
+    /**
+     * @param numberPayment Amount of months to pay back the loan
+     * @param monthlyInterest Monthly interest calculated from annual interest divided by 1200
+     * @param totalLoan Total amount of the laon
+     * @return Returns a string value that has been rounded using the decimal formatter library
+     */
+    public String calculateMonthly(int numberPayment, double monthlyInterest, double totalLoan) {
         double temp = 1;
+        DecimalFormat df = new DecimalFormat("0.00");
         for (int i = 0; i < numberPayment; i++) {
             temp *= (1+monthlyInterest);
         }
-        return totalLoan * (monthlyInterest * temp)/(temp-1);
+        return df.format(totalLoan * (monthlyInterest * temp)/(temp-1));
     }
 
+    /**
+     * Performs some basic calculations and sets it per calculation
+     * @param userName User name
+     * @param totalLoan Total amount of loan
+     * @param annualInterest The annual interest in percentage
+     * @param annualLoanTime The loan term in years
+     */
     public Calculation(String userName, double totalLoan, double annualInterest, int annualLoanTime) {
 
         this.id = nextId.incrementAndGet();
@@ -48,6 +64,10 @@ public class Calculation {
         this.monthlyInterest = annualInterest / TO_PERCENTAGE_PER_MONTH;
         this.monthlyPayment = calculateMonthly(this.monthlyLoanTime, this.monthlyInterest, totalLoan);
     }
+
+    /**
+     * Basic getters and setters
+     */
 
     public int getId() {
         return id;
@@ -105,11 +125,11 @@ public class Calculation {
         this.monthlyInterest = monthlyInterest;
     }
 
-    public double getMonthlyPayment() {
+    public String getMonthlyPayment() {
         return monthlyPayment;
     }
 
-    public void setMonthlyPayment(double monthlyPayment) {
+    public void setMonthlyPayment(String monthlyPayment) {
         this.monthlyPayment = monthlyPayment;
     }
 }
