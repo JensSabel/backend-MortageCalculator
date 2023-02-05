@@ -8,6 +8,11 @@ import jakarta.persistence.Id;
 import java.text.DecimalFormat;
 import java.util.concurrent.atomic.AtomicInteger;
 
+/**
+ * Main class for the calculation itself.
+ * Also, the class where the monthly calculations are done.
+ * Basic getters and setters also generated.
+ */
 @Entity
 public class Calculation {
     @Id
@@ -66,7 +71,7 @@ public class Calculation {
     }
 
     /**
-     * Basic getters and setters
+     * Basic getters and setters below
      */
 
     public int getId() {

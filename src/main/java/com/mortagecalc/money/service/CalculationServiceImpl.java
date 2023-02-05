@@ -7,6 +7,9 @@ import org.springframework.stereotype.Service;
 
 import java.util.List;
 
+/**
+ * Not currently used since the h2 database has not been implemented, but structure is set up already for it.
+ */
 @Service
 public class CalculationServiceImpl implements CalculationService {
     @Autowired
